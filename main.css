@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+:root {
+    --bgcolor: #2D2F3B;
+    --mainboxcolor: #202020;
+    --boxcolor: #383B42;
+    --btncolor2: #393c4295;
+    --btncolor3: #323232;
+    --bluecolor: #47b1e9;
+    --btncolo: #FFB800;
+    --fontcolor: #ffffff;
+    --lablecolor: #818181;
+    --greencolor: #06DD57;
+    --hovercolor:#1a212e;
+}
+.light{
+    --bgcolor: #414244;
+    --mainboxcolor: #ECEBF0;
+    --boxcolor: #a4a7af;
+    --btncolor2: #FFFFFF;
+    --btncolor3: #323232;
+    --bluecolor: #47b1e9;
+    --btncolo: #FFB800;
+    --fontcolor: #000000;
+    --lablecolor: #818181;
+    --greencolor: #06DD57;
+    --hovercolor:#ECEBF0;
+}
+
+body {
+    background-color: var(--bgcolor);
+    color: var(--fontcolor);
+    font-family: 'Poppins', sans-serif;
+}
+.mainCenter{
+    justify-content: center;
+}
+.crossCenter{
+    align-items: center;
+}
+
+.row{
+    display: flex;
+}
+.col{
+    flex-direction: column;
+}
+.mainBox{
+    width: 100vw;
+    height: 100vh;
+}
+.Screen{
+    background-color: var(--mainboxcolor);
+    width: 320px;
+    height: 540px;
+    border-radius: 10px;
+    transition: all .5s ease-in;
+    padding: 10px;
+}
+.Screen:hover{
+    background-color: var(--hovercolor);
+}
+.title{
+    margin-left: 5px;
+}
+.header{
+    justify-content: space-between;
+    align-items: center;
+}
+.contollbtn{
+    padding: 5px 15px;
+    background-color: transparent;
+    border: none;
+    color: var(--lablecolor);
+}
+.Output{
+    height: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: scroll;
+    justify-content: end;
+}
+::-webkit-scrollbar{
+    display: block  ;
+    
+}
+.opration{
+    text-align: end;
+    font-size: 18px;
+}
+.result{
+    text-align: end;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.firstRow{
+    background-color: transparent;
+    color: var(--lablecolor);
+    font-size: 12px;
+    border: none;
+    padding: 10px;
+}
+.btn{
+    justify-content: space-between;
+    gap: 3px;
+    margin-top: 3px;
+}
+.logo{
+    width: 20px;
+    height: 20px;
+   cursor: pointer;
+}
+.Flogo{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.mainButton{
+    font-size: 15px;
+    background-color: var(--btncolor2);
+    border: none;
+    width: 90px;
+    height: 50px;
+    border-radius: 5px;
+    color: var(--fontcolor);
+}       
+.mainButton:hover{
+    background-color: var(--boxcolor);
+}
+.orange{
+    width: 180px;
+ background-color: var(--btncolo);
+}
+.green{
+  
+    background-color: var(--greencolor);
+}
+.red{
+    width: 180px;
+    background-color: rebeccapurple;
+}
+.foot{
+    margin-top: 10px;
+}
+.ficon{
+    background-color: transparent;
+    border: none;
+}
+.footer_C{
+    position: absolute;
+    bottom: 10px;
+}
+.author{
+    text-decoration: none;
+    color: var(--btncolo);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
